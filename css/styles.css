@@ -142,7 +142,7 @@ footer .attribution a {
   color: var(--Softviolet-accent);
 }
 
-@media (min-width: 375px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
