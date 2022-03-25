@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+:root {
+  --Verydarkblue-main-background: hsl(233, 47%, 7%);
+  --Darkdesaturatedblue-card-background: hsl(244, 38%, 16%);
+  --Softviolet-accent: hsl(277, 64%, 61%);
+  --White-main-heading-stats: hsl(0, 0%, 100%);
+  --Slightlytransparentwhite-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightlytransparentwhite-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Verydarkblue-main-background);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35.6rem;
+  height: 27.9rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background-color: var(--Darkdesaturatedblue-card-background);
+}
+
+main .text-container .text {
+  margin: 4.48rem 4.53rem;
+}
+
+main .text-container .text h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--White-main-heading-stats);
+}
+
+main .text-container .text h1 span {
+  color: var(--Softviolet-accent);
+}
+
+main .text-container .text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 1.6rem;
+  color: black;
+  font-size: 0.9375rem;
+  width: 350px;
+  line-height: 1.5625rem;
+  color: var(--Slightlytransparentwhite-main-paragraph);
+}
+
+main .text-container .flex {
+  width: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0 3.125rem;
+}
+
+main .text-container .flex a {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: var(--Slightlytransparentwhite-stat-headings);
+}
+
+main .text-container .flex .companies-templates-queries {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.3125rem;
+  color: var(--White-main-heading-stats);
+}
+
+main .image-container {
+  width: 33.8rem;
+  height: 27.9rem;
+}
+
+main .image-container .op {
+  position: absolute;
+  background-color: #690099;
+  width: 33.8rem;
+  height: 27.9rem;
+  opacity: 0.5;
+  border-radius: 0 0.5rem 0.5rem 0;
+  overflow: hidden;
+}
+
+main .image-container img {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+}
+
+footer .attribution {
+  text-align: center;
+  font-size: 0.6875rem;
+}
+
+footer .attribution a {
+  color: var(--Softviolet-accent);
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .text-container {
+    width: 21.85rem;
+    height: 34.9rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  main .text-container .text {
+    margin: 1rem 1.625rem;
+  }
+  main .text-container .text h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  main .text-container .text p {
+    width: auto;
+    text-align: center;
+    margin: 1.625rem 0.625rem;
+    font-size: 1rem;
+  }
+  main .text-container .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.1875rem;
+    margin: 0 auto;
+    width: 18.75rem;
+  }
+  main .text-container .flex .companies-templates-queries {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .image-container {
+    width: 21.875rem;
+    height: auto;
+  }
+  main .image-container .op {
+    width: 21.875rem;
+    height: 18.0625rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  main .image-container img {
+    max-width: 100%;
+    vertical-align: top;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .text-container {
+    width: 33.75rem;
+    height: 34.9rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  main .text-container .text {
+    margin: 2.375rem 1.625rem;
+  }
+  main .text-container .text h1 {
+    text-align: center;
+    font-size: 2.25rem;
+  }
+  main .text-container .text p {
+    width: auto;
+    text-align: center;
+    margin: 1.625rem 0.625rem;
+    font-size: 1.2rem;
+  }
+  main .text-container .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2.1875rem;
+    margin: 0 auto;
+    width: 33.75rem;
+  }
+  main .text-container .flex .companies-templates-queries {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 1.8rem;
+  }
+  main .image-container {
+    width: 33.75rem;
+    height: 18.75rem;
+  }
+  main .image-container .op {
+    width: 33.75rem;
+    height: 18.75rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  main .image-container img {
+    width: 33.75rem;
+    height: 18.75rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    vertical-align: top;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
